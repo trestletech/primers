@@ -26,6 +26,10 @@ library(later)
 source("https://metrics.ap01.rstudioprimers.com/learnr/installMetrics", local=TRUE)
 ```
 
+```{r, context="server"}
+session$allowReconnect(TRUE)
+```
+
 ## Welcome 
 
 ### Welcome to R

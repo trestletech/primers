@@ -1495,12 +1495,12 @@
       }
     },
     "learnr": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "GithubRepo": null,
-      "GithubUsername": null,
-      "GithubRef": null,
-      "GithubSha1": null,
+      "Source": "github",
+      "Repository": null,
+      "GithubRepo": "learnr",
+      "GithubUsername": "rstudio",
+      "GithubRef": "master",
+      "GithubSha1": "07f03a89b3145c58cf42ef4712edbddae776f2e2",
       "description": {
         "Package": "learnr",
         "Type": "Package",
@@ -1509,18 +1509,30 @@
         "Authors@R": "c(\n  person(\"Barret\", \"Schloerke\", role = c(\"aut\", \"cre\"), email = \"barret@rstudio.com\",\n        comment = c(ORCID = \"0000-0001-9986-114X\")),\n  person(\"JJ\", \"Allaire\", role = \"aut\", email = \"jj@rstudio.com\"),\n  person(\"Barbara\", \"Borges\", role = \"aut\", email = \"barbara@rstudio.com\"),\n  person(\"Angela\", \"Li\", role = \"ctb\", email = \"angelali921@gmail.com\", comment = \"vignette\"),\n  person(\"RStudio\", role = c(\"cph\", \"fnd\")),\n  person(family = \"Ajax.org B.V.\", role=c(\"ctb\", \"cph\"), comment= \"Ace library\"),\n  person(\"Zeno\", \"Rocha\", role = c(\"ctb\", \"cph\"), comment = \"clipboard.js library\"),\n  person(\"Nick\", \"Payne\", role = c(\"ctb\", \"cph\"), comment = \"Bootbox library\"),\n  person(\"Jake\", \"Archibald\", role = c(\"ctb\", \"cph\"), comment = \"idb-keyval library\")\n  )",
         "Description": "Create interactive tutorials using R Markdown. Use a combination\n  of narrative, figures, videos, exercises, and quizzes to create self-paced\n  tutorials for learning about R and R packages.",
         "License": "Apache License (>= 2.0)",
-        "URL": "https://rstudio.github.io/learnr/, https://github.com/rstudio/learnr",
+        "URL": "https://rstudio.github.io/learnr/,\nhttps://github.com/rstudio/learnr",
         "BugReports": "https://github.com/rstudio/learnr/issues",
-        "Imports": "utils,\nparallel,\nwithr,\nrappdirs,\nrprojroot,\njsonlite,\nhtmltools (>= 0.3.5),\nhtmlwidgets,\nevaluate,\nknitr (>= 1.14),\nmarkdown,\nshiny (>= 1.0),\nrmarkdown (>= 1.12.0),\nellipsis (>= 0.2.0.1),\ncheckmate,\nrenv (>= 0.8.0)",
+        "Imports": "utils, parallel, withr, rappdirs, rprojroot, jsonlite,\nhtmltools (>= 0.3.5), htmlwidgets, evaluate, knitr (>= 1.14),\nmarkdown, shiny (>= 1.0), rmarkdown (>= 1.12.0), ellipsis (>=\n0.2.0.1), checkmate, renv (>= 0.8.0)",
         "Encoding": "UTF-8",
         "LazyData": "true",
         "Roxygen": "list(markdown = TRUE)",
         "RoxygenNote": "7.0.2",
-        "Suggests": "testthat (>= 2.1.0),\ncallr,\nrlang",
+        "Suggests": "testthat (>= 2.1.0), callr, rlang",
         "VignetteBuilder": "knitr",
+        "RemoteType": "github",
+        "RemoteHost": "api.github.com",
+        "RemoteRepo": "learnr",
+        "RemoteUsername": "rstudio",
+        "RemoteRef": "master",
+        "RemoteSha": "07f03a89b3145c58cf42ef4712edbddae776f2e2",
+        "GithubRepo": "learnr",
+        "GithubUsername": "rstudio",
+        "GithubRef": "master",
+        "GithubSHA1": "07f03a89b3145c58cf42ef4712edbddae776f2e2",
+        "NeedsCompilation": "no",
+        "Packaged": "2020-03-05 17:47:56 UTC; jeff",
         "Author": "Barret Schloerke [aut, cre] (<https://orcid.org/0000-0001-9986-114X>),\n  JJ Allaire [aut],\n  Barbara Borges [aut],\n  Angela Li [ctb] (vignette),\n  RStudio [cph, fnd],\n  Ajax.org B.V. [ctb, cph] (Ace library),\n  Zeno Rocha [ctb, cph] (clipboard.js library),\n  Nick Payne [ctb, cph] (Bootbox library),\n  Jake Archibald [ctb, cph] (idb-keyval library)",
         "Maintainer": "Barret Schloerke <barret@rstudio.com>",
-        "Built": "R 3.6.1; ; 2020-03-04 19:29:13 UTC; unix"
+        "Built": "R 3.6.1; ; 2020-03-05 17:47:56 UTC; unix"
       }
     },
     "lifecycle": {
@@ -3357,7 +3369,7 @@
       "checksum": "4d680277fcb68a9209ca33710077b578"
     },
     "packrat/desc/learnr": {
-      "checksum": "d9505ef6714952ac2d886845758be955"
+      "checksum": "43285850cffc76b5131a885ee05836a8"
     },
     "packrat/desc/lifecycle": {
       "checksum": "c3d7597d7cb03a7d6231d8ea3bd1bbda"
@@ -3537,7 +3549,7 @@
       "checksum": "42e12e4cc19c4759dca5c1d9df2df8d7"
     },
     "packrat/packrat.lock": {
-      "checksum": "9e8ce7ec3c9791462d84d2d58ef9603a"
+      "checksum": "e44375e527de6d9c60547748698e424b"
     }
   },
   "users": null

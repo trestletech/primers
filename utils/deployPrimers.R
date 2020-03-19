@@ -1,13 +1,13 @@
-# Make sure our library is current
-renv::restore()
 
 source("utils/listPrimers.R", local=TRUE)
 
-allRMDs <- officialPrimers
-allDirs <- unique(dirname(allRMDs))
-
 wd <- getwd()
 on.exit({ setwd(wd) }, add=TRUE)
+
+library(connectapi)
+
+# CONNECT_SERVER and CONNECT_API_KEY must be set as env vars
+client <- connect()
 
 i <- 0
 lapply(allDirs, function(dir){
@@ -16,7 +16,11 @@ lapply(allDirs, function(dir){
   cat(i, " of ", length(allDirs), "\n")
   setwd(dir)
   tryCatch({
-    rsconnect::writeManifest()
+    bundle <- bundle_dir(".")
+    content <- client %>%
+      deploy(bundle, name = basename(dir)) %>%
+      poll_task() %>%
+      set_vanity_url(basename(dir))
   }, error = function(e){
     print("ERROR")
     print(e)
